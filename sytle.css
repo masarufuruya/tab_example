@@ -1,0 +1,23 @@
+body {
+	margin: 20px;
+}
+
+.select-account {
+	width: 180px;
+}
+
+.select-account .dropdown-list {
+	width: 180px;
+}
+
+.icon-area {
+	width: 28px;
+	height: 28px;
+	float: left;
+	margin-right: 5px;
+}
+
+.page-image img {
+	width: 28px;
+	height: 28px;
+}
