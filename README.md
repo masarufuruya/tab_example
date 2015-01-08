@@ -1,5 +1,5 @@
 ## DropDown
-* リンクのリストメニューの切り替えを行う今オポーネント
+* リンクのリストメニューの切り替えを行うコンポーネント
 Dropdown Javascript Pluginを利用している。
 
 * aタグ or buttonタグにdata-toggle="dropdown"をつける
