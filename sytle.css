@@ -10,6 +10,40 @@ body {
 	width: 180px;
 }
 
+.dropdown-menu {
+	width: 270px;
+}
+
+.dropdown-menu li {
+	height: 40px;
+	position: relative;
+}
+
+.dropdown-menu li a {
+	height: 40px;
+	padding-left: 16px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.dropdown-menu li .page-name {
+	position: absolute;
+	top: 10px;
+}
+
+.dropdown-menu li:last-child {
+	border-top: 1px solid #ccc;
+}
+
+.fa-plus-square {
+	margin-right: 5px;
+}
+
+.dropdown-menu img {
+	margin-top: 3px;
+	margin-right: 10px;
+}
+
 .icon-area {
 	width: 28px;
 	height: 28px;
