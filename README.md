@@ -1,11 +1,24 @@
-## DropDown
-* リンクのリストメニューの切り替えを行うコンポーネント
-Dropdown Javascript Pluginを利用している。
+## Tab
+* タブごとのコンテンツの切り替えを行うコンポーネント
+* タブの切り替えにはtab.jsを利用している
 
-* aタグ or buttonタグにdata-toggle="dropdown"をつける
+## 手順
+* ulタグにnav,nav-tabsクラスをつける
+* nav-pillsをつけると、pills形式になる
+* aタグ内にdata-toggle="tab"をつけるとJSコードを書かずにタブの切り替えが出来る
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
+        <li role="presentation"><a href="#profile" role="tab" data-toggle="tab">Profile</a></li>
+        <li role="presentation"><a href="#messages" role="tab" data-toggle="tab">Messages</a></li>
+        <li role="presentation"><a href="#settings" role="tab" data-toggle="tab">Settings</a></li>
+      </ul>
 
-## 学び
-* ブロックレベル要素は親要素の内容幅全体に広がって配置される
-例: div, p, ul, ol, h1-h6等 改行を伴う要素
+* tab-contentクラスの中にタブの中身を書いていく
+* nav-tabsのaタグのhrefとtab-contentのidを同一にする
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="home">home</div>
+        <div role="tabpanel" class="tab-pane" id="profile">...</div>
+        <div role="tabpanel" class="tab-pane" id="messages">...</div>
+        <div role="tabpanel" class="tab-pane" id="settings">...</div>
+      </div>
 
-* ブロックレベル要素は改行を伴う
